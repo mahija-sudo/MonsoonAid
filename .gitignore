@@ -1,0 +1,17 @@
+# Python temporary files
+__pycache__/
+*.py[cod]
+
+# macOS files
+.DS_Store
+
+# IDE settings
+.idea/
+.vscode/
+
+# Virtual environments
+venv/
+.venv/
+
+# Duplicate older project folder
+MonsoonAid/

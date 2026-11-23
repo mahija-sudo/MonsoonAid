@@ -1,0 +1,28 @@
+MONSOONAID - DELIVERY PLANNER RESULTS
+
+Low Flood Scenario
+D1: Van - 18.00
+D2: Van - 13.00
+D3: Van - 14.00
+Total Cost: 45.00
+
+Moderate Flood Scenario
+D1: Van - 20.00
+D2: Truck - 22.50
+D3: Truck - 23.75
+Total Cost: 66.25
+
+Severe Flood Scenario
+D1: Truck - 31.50
+D2: 4x4 - 36.00
+D3: 4x4 - 37.50
+Total Cost: 105.00
+
+Observation:
+As flood severity increases, the planner selects
+more capable vehicles and the total delivery cost increases.
+
+Note:
+The planner processes destinations in priority order.
+Vehicle selection is based on the lowest feasible cost
+for each delivery leg.

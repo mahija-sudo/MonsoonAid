@@ -1,0 +1,59 @@
+
+ROAD MOVEMENT COSTS
+. = 1
+W = 2
+M = 4
+H = 6
+X = inf
+MONSOONAID - FLOOD RELIEF GRID
+S = Relief Centre | D = Destination
+. = Normal | W = Low Risk | M = Moderate Risk
+H = High Risk | X = Blocked Road
+S . . W . . . . . .
+. X . W . M . . . .
+. . . . . M . . D .
+. H H . . . . X . .
+. . W . M M . . . .
+. . W . . . . H . .
+. X . . W . . H . .
+. . . M . . . . . .
+. . D . . X . . . .
+. . . . . . . . . D
+
+ROAD ACCESSIBILITY TEST
+Position (0, 0): True
+Position (1, 1): False
+Position (5, 5): True
+Position (10, 10): False
+
+NEIGHBOUR TEST
+Neighbours of (0, 0): [(1, 0), (0, 1)]
+Neighbours of (1, 0): [(0, 0), (2, 0)]
+
+MONSOONAID - PRIORITY BASED RELIEF DELIVERY
+=======================================================
+
+Delivery Priority: High
+Destination: (2, 8)
+Route: [(0, 0), (0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6), (0, 7), (0, 8), (1, 8), (2, 8)]
+Delivery Cost: 11
+Movements: 10
+Nodes Explored: 57
+
+Delivery Priority: Medium
+Destination: (8, 2)
+Route: [(2, 8), (2, 7), (2, 6), (3, 6), (3, 5), (3, 4), (3, 3), (4, 3), (5, 3), (6, 3), (6, 2), (7, 2), (8, 2)]
+Delivery Cost: 12
+Movements: 12
+Nodes Explored: 86
+
+Delivery Priority: Low
+Destination: (9, 9)
+Route: [(8, 2), (8, 3), (8, 4), (9, 4), (9, 5), (9, 6), (9, 7), (9, 8), (9, 9)]
+Delivery Cost: 8
+Movements: 8
+Nodes Explored: 55
+
+=======================================================
+TOTAL DELIVERY COST: 31
+PRIORITY DELIVERY PROCESS COMPLETED!
